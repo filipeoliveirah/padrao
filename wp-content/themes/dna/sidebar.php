@@ -56,4 +56,12 @@
 		</div>
 	</div>-->
 	<!--BODY SIDEBAR-->
+
+	<div class="blog-widget blog-widget-social">    
+		<div class="col-md-6 blog-widget-title">Siga-nos</div>
+		<hr>
+		<div class="blog-widget-content">
+			<?php if ( dynamic_sidebar('facebook') ) : else : endif; ?>
+		</div>
+	</div>
 </div>

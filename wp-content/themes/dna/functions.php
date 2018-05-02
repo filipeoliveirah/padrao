@@ -35,7 +35,7 @@
     // Adicona área de widgets
     function dna_widgets_init() {
         register_sidebar( array(
-            'name'          => __( 'E-book', 'dna' ),
+            'name'          => __( 'Sidebar', 'dna' ),
             'id'            => 'sidebar-1',
             'description'   => __( 'Add widgets here to appear in your sidebar.', 'twentyfifteen' ),
             'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -58,6 +58,20 @@
         ) );
     }
     add_action( 'widgets_init', 'pesquisar_widgets_init' );
+
+    function facebook_widgets_init() {
+        register_sidebar( array(
+            'name'          => __( 'Facebook', 'dna' ),
+            'id'            => 'facebook',
+            'description'   => __( 'Add widgets here to appear in your sidebar.', 'twentyfifteen' ),
+            'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</aside>',
+            'before_title'  => '<p class="blog-widget-subtitle">',
+            'after_title'   => '</p>',
+        ) );
+    }
+    add_action( 'widgets_init', 'facebook_widgets_init' );
+
     // Adicona área de widgets
 
     function wordpress_pagination() {

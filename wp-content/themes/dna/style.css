@@ -11,7 +11,7 @@ body {
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	background: #f6f6f6;
   }
-  a{color:#900}
+  a{color:#e13f30}
   p{font-size: 17px; color: #757575; margin: 5px 0}
   h1, h2, h3{margin-top: 10px}
   .container-fluid > .navbar-collapse, .container-fluid > .navbar-header, .container > .navbar-collapse, .container > .navbar-header{
@@ -25,16 +25,17 @@ body {
   .navbar-nav{margin-top: 15px; text-transform: uppercase; font-weight: 700; margin-left: 20px}
   .navbar-nav > li > a{padding-top: 0; padding-bottom: 0}
   .navbar-default .navbar-nav > li > a{border-left: 1px solid #b2b2b2}
+  .navbar-default{border-color: rgba(0,0,0,0);}
   .navbar-brand{padding: 15px 5px 0 15px}
   .navbar-brand > img{max-width: 200px;}
-  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover{background: #f8f8f8; color: #900; margin-bottom: 20px }
+  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover{background: #f8f8f8; color: #e13f30; margin-bottom: 20px }
   .navbar-nav > li > a{margin-top: 20px; margin-bottom: 5px}
   /*NAVBAR*/
   
   /*CAROUSEL*/
   .carousel-caption{top: 100px; font-size: 45px}
   .carousel-caption h2{font-size: 45px;}
-  .carousel-caption button{background: #900; color: white; padding: 10px; border: 0; border-radius: 4px; font-size: 16px; text-transform: uppercase; box-shadow: 0px 3px 1px 0 rgba(0, 0, 0, 0.4)}
+  .carousel-caption button{background: #e13f30; color: white; padding: 10px; border: 0; border-radius: 4px; font-size: 16px; text-transform: uppercase; box-shadow: 0px 3px 1px 0 rgba(0, 0, 0, 0.4)}
   .carousel-inner img{-webkit-filter: brightness(50%); /* Safari 6.0 - 9.0 */
     filter: brightness(50%);
   }
@@ -67,21 +68,21 @@ body {
     transform: translate(-50%,-50%);
   }
   .blog-tag-categoria{margin: 10px auto 10px auto; display: table}
-  .blog-tag-categoria span{text-transform: uppercase; margin: 0 2px; padding:5px; color: #900; border: 1px solid #900; border-radius: 3px}
+  .blog-tag-categoria span{text-transform: uppercase; margin: 0 2px; padding:5px; color: #e13f30; border: 1px solid #e13f30; border-radius: 3px}
   
   .blog-card-footer{background: #f6f6f6; min-height: 70px; padding: 20px}
   .blog-card-data, .blog-card-leia-mais{color: #909090; padding: 5px; border-radius: 3px; text-align: center; border: 1px solid #919191; margin-bottom: 10px}
   .blog-card-leia-mais{background: white;}
   .blog-card-leia-mais a{text-decoration: none; color: #919191}
-  .blog-card-leia-mais a:hover{color: #900;}
-  .blog-card-leia-mais i{background: #900; padding: 9px; margin:0; position: absolute; right: 4px; top: 0px; border-radius: 0 3px 3px 0; color: white}
+  .blog-card-leia-mais a:hover{color: #e13f30;}
+  .blog-card-leia-mais i{background: #e13f30; padding: 9px; margin:0; position: absolute; right: 4px; top: 0px; border-radius: 0 3px 3px 0; color: white}
   .blog-card-social{margin: 0px auto; display: table; color: #f6f6f6}
   .blog-card-social i{color: #919191; margin: 10px; cursor: pointer}
-  .blog-card-social i:hover{color: #900}
+  .blog-card-social i:hover{color: #e13f30}
   
   .blog-paginacao{margin:0 auto; display: table}
   .blog-paginacao a{text-decoration: none}
-  .blog-paginacao .antigos{color: #900;}
+  .blog-paginacao .antigos{color: #e13f30;}
   .blog-paginacao .recentes{color: black;}
   /*BLOG*/
 
@@ -89,10 +90,10 @@ body {
   .blog-widget-buscar{width: 100%}
   .blog-widget-subtitle{color: #909090; text-align: center}
   .blog-widget-buscar input{width:100%; border: 0; float: left; background: #f1f1f1; padding: 7px; color: #919191;}
-  .blog-widget-buscar button{width:20%; border: 0;float: left; background: #900; color: white; padding: 10px}
+  .blog-widget-buscar button{width:20%; border: 0;float: left; background: #e13f30; color: white; padding: 10px}
   .blog-widget{background: white; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0px 0px 0px 0 rgba(0, 0, 0, 0.1)}
   .blog-widget-title{float: left;
-	border: 1px solid #b2b2b2;
+	border: 1px solid #7e4141;
 	padding: 10px;
 	text-align: center;
 	border-radius: 3px;
@@ -122,7 +123,8 @@ body {
   }
   .blog-widget-newsletter{color: #919191; width: 100%;}
   .blog-widget-newsletter input{width: 100%; margin: 5px 0; padding: 10px; border: 0; background: #f1f1f1}
-  .blog-widget-newsletter input:not([type]), input[type="submit"]{background: #900; border: none; color: white; text-transform: uppercase}
+  .blog-widget-newsletter input:not([type]), input[type="submit"]{background: #e13f30; border: none; color: white; text-transform: uppercase}  
+  .blog-widget-social i {font-size: 30px; margin: 20px; color: #e13f30}
   /*SIDEBAR*/
 
 
@@ -133,11 +135,14 @@ body {
   footer .footer-go-top{font-size: 16px; background: #f1f1f1; border-radius: 60%; width: 80px; height: 80px; text-align: center; padding-top: 5px; margin:0 auto; display: table;}
   footer .footer-go-top i {display: block; margin-top: 10px;}
   footer .footer-go-top a{text-decoration: none; font:black}
-  footer .footer-line{background: #900; padding: 10px; text-align: center; color: white; width: 100%; display: inline-block;}
-  footer p{text-transform: uppercase; color: #919191}
-  footer span{background: #900; color: white; padding: 10px; margin: 5px 0; display: block}
-  footer .footer-divisoria{border-right: 1px solid #b2b2b2; margin-bottom: 30px; height: 90px}
+  footer .footer-line{background: #e13f30; padding: 10px; text-align: center; color: white; width: 100%; display: inline-block;}
+  footer p{color: #757575; font-size: 14px; text-align: left}
+  footer span{background: #e13f30; color: white; padding: 10px; margin: 5px 0; display: block}
+  footer .footer-divisoria{border-right: 1px solid #b2b2b2; margin-bottom: 30px; height: 100%}
   .footer-call-to-action{margin: 0 auto; display: table}
+  footer h3{color: #e13f30; text-align: left; font-weight: 700; font-size: 17px; text-transform: uppercase; padding:0; min-height: 40px;}
+  footer ul{list-style: none; padding: 7px; background: #f1f1f1}
+  footer a{color: #b2b2b2}
   /*FOOTER*/
   
   @media(max-width: 1160px){

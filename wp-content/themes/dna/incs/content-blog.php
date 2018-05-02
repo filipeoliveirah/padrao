@@ -19,7 +19,7 @@
             </div> 
             <div class="blog-card-footer">
                 <div class="col-md-3"><div class="blog-card-data"><?php the_time('d/m/Y'); ?></div></div>
-                <div class="col-md-6"><div class="blog-card-social"><i class="fab fa-facebook-f"> /cmng</i><i class="fab fa-instagram"> @cmng</i></div></div>
+                <div class="col-md-6"><div class="blog-card-social"><i class="fab fa-facebook-f"> /padrao</i><i class="fab fa-instagram"> @padrao</i></div></div>
                 <div class="col-md-3"><div class="blog-card-leia-mais" style="padding-right: 25px"><a href="<?php the_permalink(); ?>">LEIA MAIS</a><i class="fas fa-angle-right"></i></div></div>
             </div>          
         </div>
