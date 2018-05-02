@@ -19,7 +19,9 @@ body {
   }
   
   h2{font-size: 25px}
-  
+
+  .divisoria-lateral{ border-left: 1px solid #d0d0d0; min-height: 330px}
+
   /*NAVBAR*/
   .navbar-static-top {margin-bottom: 0;}
   .navbar-nav{margin-top: 15px; text-transform: uppercase; font-weight: 700; margin-left: 20px}
@@ -136,13 +138,13 @@ body {
   footer .footer-go-top i {display: block; margin-top: 10px;}
   footer .footer-go-top a{text-decoration: none; font:black}
   footer .footer-line{background: #e13f30; padding: 10px; text-align: center; color: white; width: 100%; display: inline-block;}
+  footer .footer-call-to-action{margin: 0 auto; display: table}
   footer p{color: #757575; font-size: 14px; text-align: left}
   footer span{background: #e13f30; color: white; padding: 10px; margin: 5px 0; display: block}
   footer .footer-divisoria{border-right: 1px solid #b2b2b2; margin-bottom: 30px; height: 100%}
-  .footer-call-to-action{margin: 0 auto; display: table}
-  footer h3{color: #e13f30; text-align: left; font-weight: 700; font-size: 17px; text-transform: uppercase; padding:0; min-height: 40px;}
-  footer ul{list-style: none; padding: 7px; background: #f1f1f1}
-  footer a{color: #b2b2b2}
+  footer h3{color: #e13f30; text-align: left; font-weight: 700; font-size: 17px; text-transform: uppercase; padding:0 10px; min-height: 40px;}
+  footer ul{list-style: none; padding: 7px; font-size: 17px}
+  footer a{color: #a3a3a3}
   /*FOOTER*/
   
   @media(max-width: 1160px){
@@ -154,5 +156,6 @@ body {
   .carousel-caption{top: 0px}
   .carousel-inner > .item{height: 120px;}
   .blog-card-thumb, .carousel-inner{height: 140px;}
-	.carousel-inner > .item > a > img, .carousel-inner > .item > img {max-width: inherit}
+  .carousel-inner > .item > a > img, .carousel-inner > .item > img {max-width: inherit}
+  .divisoria-lateral{border: 0; min-height: auto}
   }
