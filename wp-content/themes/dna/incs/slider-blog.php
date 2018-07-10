@@ -10,7 +10,7 @@
     <div class="item active">
       <?php the_post_thumbnail('full'); ?>
       <div class="carousel-caption">
-        <h2><?php the_title(); ?></h2>
+        <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
       </div>
     </div>
     <?php endwhile; ?>    

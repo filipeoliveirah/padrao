@@ -72,6 +72,18 @@
     }
     add_action( 'widgets_init', 'facebook_widgets_init' );
 
+    function banner_widgets_init() {
+        register_sidebar( array(
+            'name'          => __( 'Banner', 'dna' ),
+            'id'            => 'banner',
+            'description'   => __( 'Add widgets here to appear in your sidebar.', 'twentyfifteen' ),
+            'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</aside>',
+            'before_title'  => '<p class="blog-widget-subtitle">',
+            'after_title'   => '</p>',
+        ) );
+    }
+    add_action( 'widgets_init', 'banner_widgets_init' );
     // Adicona área de widgets
 
     function wordpress_pagination() {
@@ -125,5 +137,39 @@
         'primary' => __( 'Principal', 'dna' ),
     ) );
 
-      
+    add_action('init', 'type_post_materiais');  
+    function type_post_materiais() { 
+          $materiais = array(
+              'name' => _x('Materiais', 'post type general name'),
+              'singular_name' => _x('Material', 'post type singular name'),
+              'add_new' => _x('Adicionar Material', 'Novo Material'),
+              'add_new_item' => __('Novo Material'),
+              'edit_item' => __('Editar Material'),
+              'new_item' => __('Novo Material'),
+              'view_item' => __('Ver Material'),
+              'search_items' => __('Procurar Materiais'),
+              'not_found' =>  __('Nenhum registro encontrado'),
+              'not_found_in_trash' => __('Nenhum registro encontrado na lixeira'),
+              'parent_item_colon' => '',
+              'menu_name' => 'Materiais'
+          );
+  
+          $args = array(
+            'labels' => $materiais,
+            'public' => true,
+            'public_queryable' => true,
+            'show_ui' => true,           
+            'query_var' => true,
+            'rewrite' => true,
+            'capability_type' => 'post',
+            'has_archive' => true,
+            'hierarchical' => false,
+            'menu_position' => null,
+            'register_meta_box_cb' => 'materiais_meta_box',       
+            'supports' => array('title','thumbnail', 'custom-fields', 'revisions')
+          );
+    
+      register_post_type( 'materiais' , $args );
+      flush_rewrite_rules();
+    } 
 ?>

@@ -17,7 +17,8 @@ body {
   .container-fluid > .navbar-collapse, .container-fluid > .navbar-header, .container > .navbar-collapse, .container > .navbar-header{
 	min-height: 100px;
   }
-  
+    
+  h1{font-size: 40px; font-weight: 900}  
   h2{font-size: 25px}
 
   .divisoria-lateral{ border-left: 1px solid #d0d0d0; min-height: 330px}
@@ -41,6 +42,7 @@ body {
   .carousel-inner img{-webkit-filter: brightness(50%); /* Safari 6.0 - 9.0 */
     filter: brightness(50%);
   }
+  .carousel-inner a{color: white}
   /*CAROUSEL*/
 
   /*BLOG*/
@@ -48,7 +50,7 @@ body {
   .blog-card{margin-bottom: 20px; background: white; box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0px 0px 0px 0 rgba(0, 0, 0, 0.1)}
   
   .blog-card h2{text-align: center}
-  .blog-card-text{padding: 10px; text-align: left;}
+  .blog-card-text{padding: 20px; text-align: left;}
   .blog-card-text h1, h2, h3, h4{text-align: center}
   .blog-card-thumb, .carousel-inner{position: relative;
     width: 100%;
@@ -112,7 +114,8 @@ body {
   }
   .blog-widget-title-full{height: 300px;}
   .blog-widget-title-thumb{height: 200px}
-  .blog-widget-content{margin: 20px auto; display: inline-block; width: 100%; }
+  .blog-widget-content{margin: 20px auto; display: inline-block; width: 100%; }  
+  .blog-widget-content img{margin-top: 10px}
   .blog-widget-content-quebra{margin-bottom: 50px;}
   .blog-widget-noticias i, .blog-widget-noticias span{color: #b2b2b2; margin-bottom: 20px}
   hr{

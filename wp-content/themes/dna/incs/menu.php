@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="<?php get_site_url(); ?>/padrao"><img src="<?php get_site_url();?>/padrao/wp-content/uploads/2018/04/logo-padrao.png" class="img-responsive"></a>
+                <a class="navbar-brand" href="<?php bloginfo('home'); ?>"><img src="<?php get_site_url();?>/padrao/wp-content/uploads/2018/04/logo-padrao.png" class="img-responsive"></a>
             </div>
             <?php
             wp_nav_menu( array(

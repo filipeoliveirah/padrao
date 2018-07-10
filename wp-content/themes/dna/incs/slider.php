@@ -36,7 +36,7 @@
     <div class="item <?php if($inc == 0): echo 'active'; endif; ?>">
       <?php the_post_thumbnail('full'); ?>
       <div class="carousel-caption">
-      <h2><?php the_title(); ?></h2>
+        <a href="<?php the_permalink(); ?>"><h1><?php the_title(); ?></h1></a>
       </div>
     </div>
     <?php

@@ -3,7 +3,7 @@
         <!--BODY NEW-->
         <div class="blog-card">            
             <div class="blog-card-text">
-                <div class="blog-tag-categoria"><span><?php the_category( ', ' ); ?></span></div>        
+                <!--<div class="blog-tag-categoria"><span><?php the_category( ', ' ); ?></span></div>   -->     
                 <!-- Start the Loop. -->
                 <?php if ( have_posts() ) :
                     
@@ -33,7 +33,7 @@
             </div> 
             <div class="blog-card-footer">
                 <div class="col-md-3"><div class="blog-card-data"><?php the_time('d/m/Y'); ?></div></div>
-                <div class="col-md-6"><div class="blog-card-social"><i class="fab fa-facebook-f"> /padrao</i><i class="fab fa-instagram"> @padrao</i></div></div>
+                <div class="col-md-6"><div class="blog-card-social"><i class="fab fa-facebook-f"> <a href="https://www.facebook.com/padraolaboratorio/" target="_blank"> /padrao </a></i><i class="fab fa-instagram"> <a href="https://www.instagram.com/laboratorio.padrao" target="_blank"> @padrao </a> </i></div></div>
                 
             </div>          
         </div>
@@ -58,7 +58,7 @@
                         <div class="col-md-6 col-xs-12">
                             <div class="blog-card">
                                 
-                                <div class="blog-card-thumb"><?php the_post_thumbnail('medium', array('class' => 'img-responsive')); ?></div>
+                                <div class="blog-card-thumb"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium', array('class' => 'img-responsive')); ?></a></div>
                                 <div class="blog-tag-categoria"><span><?php the_category( ', ' ); ?></span></div>
                                 <div class="blog-card-text" style="min-height: 380px">
                                     <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
